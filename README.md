@@ -1,6 +1,6 @@
 # React - Linkos Shorteus (#FMC)
 
-## [Preview Link](https://github.com/)
+## [Preview Link](https://react-shorteus.vercel.app/)
 
 ### Screenshots : 
 
