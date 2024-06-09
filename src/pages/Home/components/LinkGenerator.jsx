@@ -10,22 +10,17 @@ export default function LinkGenerator() {
   const [loading, setLoading] = useState(false);
 
   async function handleSubmit(e) {
-    try {
-      setLoading(true);
-      e.preventDefault();
+    setLoading(true);
+    e.preventDefault();
 
-      const shortUrl = await linkShortener(urlInput);
+    const shortUrl = await linkShortener(urlInput);
 
-      setUrlInput("");
+    setUrlInput("");
+    setLoading(false);
 
+    if (shortUrl)
       setUrlArr([...urlArr, { url: urlInput, shortUrl: shortUrl.data }]);
-
-      setLoading(false);
-    } catch (error) {
-      setLoading(false);
-      setUrlInput("");
-      alert("Invalid URL");
-    }
+    else alert("Invalid url");
   }
 
   const liBoxes = urlArr.map((x, i) => <LinkBox key={i} data={x} />);
