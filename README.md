@@ -1,6 +1,6 @@
 # React - Linkos Shorteus (#FMC)
 
-## [Preview Link](https://github.com/)
+## [Preview Link](https://react-shorteus.vercel.app/)
 
 ### Screenshots : 
 
@@ -13,8 +13,3 @@
 ![img7](src/assets/design/7.png)\
 ![img8](src/assets/design/8.png)\
 ![img9](src/assets/design/9.png)
-
-### #frontendmentorchallange ([template link](https://www.frontendmentor.io/challenges/url-shortening-api-landing-page-2ce3ob-G))
-
-
-### Thanks to FMC Team
