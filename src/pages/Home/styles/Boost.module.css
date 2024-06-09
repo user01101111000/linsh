@@ -1,0 +1,57 @@
+.boost {
+  background-color: var(--darkViolet-c);
+  background-image: url("../../../assets/images/bg-boost-desktop.svg");
+  padding-inline: 8%;
+  padding-block: 3.5%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.boost h1 {
+  color: white;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.boost a {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 1rem 2.5rem;
+  border-radius: 20px;
+  font-weight: 700;
+  background-color: var(--cyan-c) !important ;
+  color: white;
+  font-size: 1.5rem;
+}
+
+@media screen and (max-width: 1000px) {
+  .boost h1 {
+    color: white;
+    font-size: 2rem;
+    font-weight: 700;
+  }
+
+  .boost button {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .boost {
+    padding-block: 5%;
+  }
+  .boost h1 {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+
+  .boost a {
+    font-size: 1rem;
+  }
+}

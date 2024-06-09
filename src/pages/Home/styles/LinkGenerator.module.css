@@ -1,0 +1,97 @@
+.linkMain {
+  background-color: var(--primary-bg);
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding-inline: 8%;
+  scroll-margin-top: 400px;
+}
+.urlInputArea {
+  transform: translateY(-80px);
+  height: 200px;
+  width: 100%;
+  background-color: var(--darkViolet-c);
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../.././../assets//images/bg-boost-desktop.svg");
+}
+.form {
+  display: flex;
+  gap: 1rem;
+  height: 70px;
+  width: 100%;
+  padding-inline: 5%;
+}
+.inp {
+  height: 100%;
+  border: none;
+  outline: none;
+  background-color: white;
+  border-radius: 10px;
+  padding-inline: 2%;
+  flex: 1;
+  font-size: 1.2rem;
+}
+.subBtn {
+  flex: 0.1;
+  height: 100%;
+  font-size: 1.2rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0.8rem 2rem;
+  border-radius: 10px;
+  font-weight: 700;
+  background-color: var(--cyan-c) !important ;
+  color: white;
+}
+
+.resultList {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.results {
+  transform: translateY(-80px);
+}
+
+@media screen and (max-width: 1400px) {
+  .urlInputArea {
+    height: 180px;
+  }
+  .form {
+    height: 60px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .urlInputArea {
+    height: 150px;
+  }
+  .form {
+    height: 50px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .urlInputArea {
+    height: 150px;
+    transform: translateY(-40px);
+  }
+  .results {
+    transform: translateY(-40px);
+  }
+  .form {
+    font-size: 1rem;
+    flex-direction: column;
+    height: 100%;
+    padding: 2rem;
+  }
+  .inp {
+    flex: 0.8;
+  }
+  .subBtn {
+    flex: 0.5;
+  }
+}

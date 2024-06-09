@@ -1,0 +1,148 @@
+.statistic {
+  padding-inline: 8%;
+  background-color: var(--primary-bg);
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  padding-top: 2rem;
+  padding-bottom: 10rem;
+}
+
+.statisticText {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.statisticText h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.statisticText p {
+  font-size: 1.2rem;
+  color: var(--grayishViolet-c);
+  line-height: 1.6;
+}
+
+.statisticBoxes {
+  display: flex;
+  gap: 2rem;
+}
+
+.statisticBox {
+  flex: 1 300px;
+  background-color: white;
+  height: 250px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  padding: 1rem;
+  gap: 1rem;
+}
+.fig {
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  border-radius: 50%;
+  background-color: var(--darkViolet-c);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: -3rem;
+  left: 1.5rem;
+}
+
+.statisticBox:nth-child(2) {
+  transform: translateY(40px);
+}
+
+.statisticBox:nth-child(3) {
+  transform: translateY(80px);
+}
+.statisticBox:not(:last-child)::after {
+  content: "";
+  display: block;
+  height: 10px;
+  width: 30px;
+  background-color: var(--cyan-c);
+  position: absolute;
+  top: 50%;
+  right: -2rem;
+}
+
+.statisticBox h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.statisticBox p {
+  font-size: 1rem;
+  color: var(--grayishViolet-c);
+  line-height: 1.6;
+}
+
+@media screen and (max-width: 1400px) {
+  .fig {
+    height: 80px;
+    width: 80px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .statisticBox:not(:last-child)::after {
+    width: 25px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .statisticBox:not(:last-child)::after {
+    width: 20px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .fig {
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .statisticBoxes {
+    flex-direction: column;
+    gap: 5.8rem;
+  }
+  .statisticBox {
+    height: 100px !important;
+    transform: translateY(0) !important;
+    text-align: center;
+  }
+
+  .statisticBox:not(:last-child)::after {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 30px;
+    background-color: var(--cyan-c);
+    position: absolute;
+    top: 100%;
+    right: 49%;
+  }
+
+  .statisticBox h1 {
+    font-size: 2rem;
+
+  }
+  
+  .statisticBox p {
+    font-size: 1.5rem;
+
+  }
+  
+
+}

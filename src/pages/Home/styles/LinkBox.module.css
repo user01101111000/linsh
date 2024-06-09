@@ -1,0 +1,86 @@
+.listItem {
+  height: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-inline: 2%;
+  background-color: white;
+  border-radius: 10px;
+}
+.listItem h1 {
+  margin-right: auto;
+  font-size: 1.2rem;
+  font-weight: 700;
+
+  flex: 0.8;
+  overflow: hidden;
+  display: inline-block;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.listItem p {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--cyan-c);
+}
+
+.listItem .copyBtn {
+  font-size: 1.2rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0.7rem 2rem;
+  border-radius: 10px;
+  font-weight: 500;
+  background-color: var(--cyan-c) !important ;
+  color: white;
+  margin-left: 1.5rem;
+}
+
+.listItem .copiedBtn {
+  font-size: 1.2rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0.7rem 1rem;
+  border-radius: 10px;
+  font-weight: 500;
+  color: white;
+  margin-left: 1.5rem;
+  background-color: var(--veryDarkBlue-c) !important ;
+}
+
+@media screen and (max-width: 600px) {
+  .listItem {
+    height: 140px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 2rem;
+    padding: 1.5em;
+  }
+
+  .listItem h1 {
+    width: 100%;
+    font-size: 1.2rem;
+    margin-right: 0 !important;
+    flex: none;
+  }
+
+  .listItem p {
+    font-size: 1.2rem;
+  }
+
+  .listItem .copiedBtn {
+    height: 100%;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .listItem .copyBtn {
+    height: 100%;
+    width: 90%;
+    margin: 0 auto;
+  }
+}

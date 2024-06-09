@@ -1,0 +1,110 @@
+.header {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-inline: 8%;
+  position: sticky;
+  top: 0;
+  left: 0;
+  background-color: white;
+  z-index: 100;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.menuIcon {
+  font-size: 3rem;
+  display: none;
+  cursor: pointer;
+}
+.logo {
+  margin-right: 3rem;
+  cursor: pointer;
+}
+.navMenu {
+  display: flex;
+  gap: 3rem;
+}
+.navMenu a {
+  font-size: 1.2rem;
+  color: var(--grayishViolet-c);
+  transition: all 0.2s;
+}
+.navMenu a:hover {
+  color: black;
+}
+
+.authButtons {
+  display: flex;
+  gap: 2rem;
+}
+.authButtons button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0.7rem 1rem;
+  border-radius: 20px;
+  font-weight: 700;
+}
+.navLinks {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.2s;
+}
+
+.loginBtn {
+  color: var(--grayishViolet-c);
+}
+.signUpBtn {
+  background-color: var(--cyan-c) !important ;
+  color: white;
+}
+
+.show {
+  visibility: visible !important;
+  width: 90% !important;
+  opacity: 1 !important;
+}
+
+@media screen and (max-width: 800px) {
+  .navMenu a:hover {
+    color: white;
+  }
+
+  .menuIcon {
+    display: block;
+  }
+  .header {
+    justify-content: space-between;
+  }
+  .navLinks {
+    visibility: hidden;
+    opacity: 0;
+    margin: 0 !important;
+    display: flex;
+    gap: 3rem;
+    position: fixed;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    flex-direction: column;
+
+    background-color: var(--veryDarkBlue-c);
+    width: 0;
+    height: fit-content;
+    z-index: 10;
+    padding: 2rem;
+  }
+  .navMenu {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .authButtons {
+    flex-direction: column;
+  }
+}
