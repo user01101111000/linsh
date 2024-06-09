@@ -1,5 +1,5 @@
 async function linkShortener(link) {
-  const url = `https://www.shareaholic.com/v2/share/shorten_link?apikey=8943b7fd64cd8b1770ff5affa9a9437b&url=${link}/&service[name]=shrlc`;
+  const url = `https://www.shareaholic.com/v2/share/shorten_link?apikey=4eb892fbecfdb2216690c0483a40ae14&url=${link}`;
   const reponse = await fetch(url);
 
   if (!reponse.ok) return "";
