@@ -2,17 +2,24 @@
 
 ## [Preview Link](https://react-shorteus.vercel.app/)
 
-### Screenshots : 
+### Screenshots :
 
-1) DESKTOP : 
+1.
 
-![img1](src/assets/design/1.png)\
-\
-2) MOBILE : 
+![img1](src/assets/design/1.png)
 
-![img2](src/assets/design/2.png)
-\
-2) MOBILE 2 :
+2.
 
-![img3](src/assets/design/3.png)
+![img1](src/assets/design/5.png)
 
+3.
+
+![img3](src/assets/design/2.png)
+
+4.
+
+![img2](src/assets/design/3.png)
+
+5.
+
+![img4](src/assets/design/4.png)
