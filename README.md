@@ -1,8 +1,6 @@
 # React - Linkos Shorteus (#FMC)
 
 ## [Preview Link](https://react-shorteus.vercel.app/)
-\
-***Note : If the link shortener does not work when you try the site, turn off extensions or open the site in incognito mode. This problem may be caused by the API.***
 
 ### Screenshots :
 
