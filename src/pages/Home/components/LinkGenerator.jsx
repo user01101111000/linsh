@@ -16,7 +16,7 @@ export default function LinkGenerator() {
 
       const shortUrl = await linkShortener(urlInput);
 
-      setUrlArr([...urlArr, { url: urlInput, shortUrl: shortUrl.data }]);
+      setUrlArr([...urlArr, { url: urlInput, shortUrl: shortUrl }]);
     } catch (err) {
       alert("invalid url");
     } finally {
