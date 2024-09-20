@@ -1,18 +1,8 @@
-import axios from "axios";
+import getAxiosInstance from "../axios_instance";
+
 async function linkShortener(link) {
-  const url = `https://spoo.me`;
-  const { data } = await axios.post(
-    url,
-    {},
-    {
-      params: {
-        url: link,
-      },
-      headers: {
-        Accept: "application/json",
-      },
-    }
-  );
+  const { data } = await getAxiosInstance(link).post();
+
   return data.short_url;
 }
 

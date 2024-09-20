@@ -1,25 +1,12 @@
-# React - Linkos Shorteus (#FMC)
+<div align="center">
+<img src ="/src/assets/images/LINSHTEXT.png" alt="linsh" width="30%" title='linsh' />
+</div>
 
-## [Preview Link](https://react-shorteus.vercel.app/)
+</br>
 
-### Screenshots :
+You found an educational content and wanted to share the link with your friends, but the link is too long. It needs to be shortened, so you can shorten the link with a click.
 
-1.
+</br>
 
-![img1](src/assets/design/1.png)
-
-2.
-
-![img1](src/assets/design/5.png)
-
-3.
-
-![img3](src/assets/design/2.png)
-
-4.
-
-![img2](src/assets/design/3.png)
-
-5.
-
-![img4](src/assets/design/4.png)
+<div align="center"><img src ="/src/assets/images/LINSH.png" alt="linsh" width="100%" title='linsh' />
+</div>
