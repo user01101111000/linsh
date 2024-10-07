@@ -1,16 +1,17 @@
 import { useState } from "react";
 import style from "../styles/LinkBox.module.css";
+import { FaLink } from "react-icons/fa6";
 
 export default function LinkBox({ data }) {
   const [copyStatus, setCopyStatus] = useState(false);
 
   function handleCopy() {
-    navigator.clipboard
-      .writeText(data.shortUrl)
-      .then(() => {})
-      .finally(() => {
-        setCopyStatus(true);
-      });
+    navigator.clipboard.writeText(data.shortUrl).finally(() => {
+      setCopyStatus(true);
+      setTimeout(() => {
+        setCopyStatus(false);
+      }, 1000);
+    });
   }
 
   return (
@@ -22,7 +23,14 @@ export default function LinkBox({ data }) {
         onClick={handleCopy}
         className={copyStatus ? `${style.copiedBtn}` : `${style.copyBtn}`}
       >
-        {copyStatus ? "✅ Copied" : "Copy"}
+        {copyStatus ? (
+          "✅ Copied"
+        ) : (
+          <div className={style.copyIcon}>
+            <FaLink />
+            Copy
+          </div>
+        )}
       </button>
     </li>
   );

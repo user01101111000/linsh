@@ -51,6 +51,11 @@
   margin-left: 1.5rem;
   background-color: var(--veryDarkBlue-c) !important ;
 }
+.copyIcon {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
 
 @media screen and (max-width: 600px) {
   .listItem {
@@ -82,5 +87,12 @@
     height: 100%;
     width: 90%;
     margin: 0 auto;
+  }
+
+  .copyIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
   }
 }
