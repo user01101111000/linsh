@@ -30,7 +30,7 @@
   color: var(--grayishViolet-c);
   line-height: 1.6;
 }
-.heroText button {
+.heroText .heroButton {
   border: none;
   outline: none;
   cursor: pointer;

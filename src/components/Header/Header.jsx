@@ -8,19 +8,15 @@ export default function Header() {
 
   return (
     <header className={style.header}>
-      <img src={logo} alt="logo" className={style.logo} />
+      <a href="#hero">
+        <img src={logo} alt="logo" className={style.logo} />
+      </a>
 
       <div className={`${style.navLinks} ${showMenu ? style.show : ""}`}>
         <nav className={style.navMenu}>
-          <a href="https://github.com/aresheus" target="_blank">
-            Features
-          </a>
-          <a href="https://github.com/aresheus" target="_blank">
-            Pricing
-          </a>
-          <a href="https://github.com/aresheus" target="_blank">
-            Resources
-          </a>
+          <a href="#linkGen">Features</a>
+          <a href="#statistic">Pricing</a>
+          <a href="#boost">Resources</a>
         </nav>
 
         <div className={style.authButtons}>

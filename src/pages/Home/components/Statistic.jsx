@@ -5,7 +5,7 @@ import icon3 from "../../../assets/images/icon-fully-customizable.svg";
 
 export default function Statistic() {
   return (
-    <section className={style.statistic}>
+    <section id="statistic" className={style.statistic}>
       <article className={style.statisticText}>
         <h1>Advanced Statistics</h1>
         <p>
